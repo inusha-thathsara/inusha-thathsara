@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="trophyCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0f141c" />
+    </linearGradient>
+
+    <!-- Glowing Border -->
+    <linearGradient id="neonGlowBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e3b341" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#00f5d4" />
+    </linearGradient>
+
+    <!-- Badge Rank Gradients -->
+    <!-- Gold / S Rank -->
+    <linearGradient id="rankS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#ff8c00" />
+    </linearGradient>
+
+    <!-- Cyan / A Rank -->
+    <linearGradient id="rankA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="100%" stop-color="#0077b6" />
+    </linearGradient>
+
+    <!-- Purple / B Rank -->
+    <linearGradient id="rankB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd93f9" />
+      <stop offset="100%" stop-color="#6272a4" />
+    </linearGradient>
+
+    <!-- Red / Special Rank -->
+    <linearGradient id="rankSpecial" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff79c6" />
+      <stop offset="100%" stop-color="#bd93f9" />
+    </linearGradient>
+
+    <filter id="badgeFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Courier New', 'Fira Code', monospace; }
+    .badge-name { font-size: 11px; fill: #8b949e; font-weight: bold; }
+    .rank-text { font-size: 15px; font-weight: 900; fill: #ffffff; }
+    .badge-desc { font-size: 10px; fill: #c9d1d9; font-weight: 600; }
+  </style>
+
+  <!-- Card Frame -->
+  <rect x="2" y="2" width="846" height="136" rx="12" fill="url(#trophyCardBg)" stroke="url(#neonGlowBorder)" stroke-width="1.5" />
+
+  <!-- Window Header -->
+  <path d="M 3 12 C 3 6 7 3 13 3 L 837 3 C 843 3 847 6 847 12 L 847 28 L 3 28 Z" fill="#131720" />
+  <circle cx="18" cy="15" r="4" fill="#ff5f56" />
+  <circle cx="32" cy="15" r="4" fill="#ffbd2e" />
+  <circle cx="46" cy="15" r="4" fill="#27c93f" />
+  <text x="425" y="19" text-anchor="middle" class="mono" font-size="11" fill="#8b949e" font-weight="bold" letter-spacing="2">🏆 GUILD TROPHY CABINET &amp; HALL OF FAME</text>
+  <line x1="3" y1="28" x2="847" y2="28" stroke="#30363d" stroke-width="1" />
+
+  <!-- Trophies Container (5 Badges) -->
+  <g transform="translate(25, 42)">
+
+    <!-- Trophy 1: 620+ Annual Commits -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="148" height="82" rx="8" fill="#161b22" stroke="#e3b341" stroke-width="1" filter="url(#badgeFilter)"/>
+      <circle cx="28" cy="28" r="16" fill="url(#rankS)" />
+      <text x="28" y="34" text-anchor="middle" class="mono rank-text">S</text>
+      <text x="52" y="24" class="mono badge-name">COMMITS</text>
+      <text x="52" y="38" class="mono" font-size="11" fill="#e3b341" font-weight="bold">620+ Year</text>
+      <text x="74" y="66" text-anchor="middle" class="mono badge-desc">Relentless Builder</text>
+    </g>
+
+    <!-- Trophy 2: Pull Shark x2 -->
+    <g transform="translate(160, 0)">
+      <rect x="0" y="0" width="148" height="82" rx="8" fill="#161b22" stroke="#00f5d4" stroke-width="1" filter="url(#badgeFilter)"/>
+      <circle cx="28" cy="28" r="16" fill="url(#rankA)" />
+      <text x="28" y="34" text-anchor="middle" class="mono rank-text">A</text>
+      <text x="52" y="24" class="mono badge-name">PULL SHARK</text>
+      <text x="52" y="38" class="mono" font-size="11" fill="#00f5d4" font-weight="bold">Tier 2 (x2)</text>
+      <text x="74" y="66" text-anchor="middle" class="mono badge-desc">PR Vanguard</text>
+    </g>
+
+    <!-- Trophy 3: Quickdraw -->
+    <g transform="translate(320, 0)">
+      <rect x="0" y="0" width="148" height="82" rx="8" fill="#161b22" stroke="#ff79c6" stroke-width="1" filter="url(#badgeFilter)"/>
+      <circle cx="28" cy="28" r="16" fill="url(#rankSpecial)" />
+      <text x="28" y="34" text-anchor="middle" class="mono rank-text">⚡</text>
+      <text x="52" y="24" class="mono badge-name">QUICKDRAW</text>
+      <text x="52" y="38" class="mono" font-size="11" fill="#ff79c6" font-weight="bold">Sub-Minute</text>
+      <text x="74" y="66" text-anchor="middle" class="mono badge-desc">Fast Dispatcher</text>
+    </g>
+
+    <!-- Trophy 4: Pair Extraordinaire x2 -->
+    <g transform="translate(480, 0)">
+      <rect x="0" y="0" width="148" height="82" rx="8" fill="#161b22" stroke="#bd93f9" stroke-width="1" filter="url(#badgeFilter)"/>
+      <circle cx="28" cy="28" r="16" fill="url(#rankB)" />
+      <text x="28" y="34" text-anchor="middle" class="mono rank-text">A</text>
+      <text x="52" y="24" class="mono badge-name">PAIR EXTRA</text>
+      <text x="52" y="38" class="mono" font-size="11" fill="#bd93f9" font-weight="bold">Co-authored</text>
+      <text x="74" y="66" text-anchor="middle" class="mono badge-desc">Squad Raider</text>
+    </g>
+
+    <!-- Trophy 5: YOLO Achievement -->
+    <g transform="translate(640, 0)">
+      <rect x="0" y="0" width="148" height="82" rx="8" fill="#161b22" stroke="#ff5f56" stroke-width="1" filter="url(#badgeFilter)"/>
+      <circle cx="28" cy="28" r="16" fill="#ff5f56" />
+      <text x="28" y="34" text-anchor="middle" font-size="16">🎲</text>
+      <text x="52" y="24" class="mono badge-name">YOLO GUILD</text>
+      <text x="52" y="38" class="mono" font-size="11" fill="#ff5f56" font-weight="bold">Fearless</text>
+      <text x="74" y="66" text-anchor="middle" class="mono badge-desc">Merged Without Review</text>
+    </g>
+
+  </g>
+</svg>
