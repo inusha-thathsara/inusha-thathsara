@@ -219,12 +219,8 @@
 ### 🐍 The Dungeon Grid (Combat Activity)
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/00f5d4/inusha-thathsara" alt="Combat Contribution Grid" width="100%" />
+  <img src="https://raw.githubusercontent.com/inusha-thathsara/inusha-thathsara/output/github-contribution-grid-snake-dark.svg" alt="Combat Contribution Snake" width="100%" />
 </p>
-
-> [!TIP]
-> **Arcade Snake Real-Time Mode**: Once you push the included [`snake.yml`](file:///.github/workflows/snake.yml) workflow to your `inusha-thathsara` repository, GitHub Actions will automatically re-render the animated arcade snake eating your contribution dots every 12 hours (and instantly on every push/manual trigger). You can then switch to:
-> `<img src="https://raw.githubusercontent.com/inusha-thathsara/inusha-thathsara/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />`
 
 ---
 
